@@ -6,26 +6,17 @@ import MusicContextProvider from "./context/MusicContextProvider";
 import SearchContextProvider from "./context/SearchContextProvider";
 import CardsContextProvider from "./context/CardsContextProvider";
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <CardsContextProvider>
-      <MusicContextProvider>
-        <SearchContextProvider>
-          <html lang="en">
-            <head>
-              <meta
-                name="viewport"
-                content="width=device-width, initial-scale=1.0"
-              />
-              <link rel="icon" href="/images/spotifyIcon.webp" />
-              <title>Spotify - Daniel Arlantt</title>
-            </head>
-            <body className="relative grid h-screen p-1 gap-2 bg-black">
+    <html lang="en">
+      <body className="relative grid h-screen p-1 gap-2 bg-black">
+        <CardsContextProvider>
+          <MusicContextProvider>
+            <SearchContextProvider>
               <header className="[grid-area:header]">
                 <Header />
               </header>
@@ -41,10 +32,10 @@ export default function RootLayout({
               <footer className="[grid-area:player]">
                 <Player />
               </footer>
-            </body>
-          </html>
-        </SearchContextProvider>
-      </MusicContextProvider>
-    </CardsContextProvider>
+            </SearchContextProvider>
+          </MusicContextProvider>
+        </CardsContextProvider>
+      </body>
+    </html>
   );
 }
