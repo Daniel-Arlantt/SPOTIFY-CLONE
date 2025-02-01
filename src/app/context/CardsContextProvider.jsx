@@ -8,7 +8,7 @@ export const cardsContext = createContext();
 export const useCard = () => {
   const context = useContext(cardsContext);
   if (!context)
-    throw new Error("useMusic must be used within a CardsContextProvider");
+    throw new Error("useCard must be used within a CardsContextProvider");
   return context;
 };
 

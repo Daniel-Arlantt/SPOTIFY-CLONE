@@ -1,10 +1,9 @@
 "use client";
 import Image from "next/image";
 import { PiHouse, PiLineVerticalBold } from "react-icons/pi";
-import { IoSearch, IoLibraryOutline } from "react-icons/io5";
+import { IoSearch } from "react-icons/io5";
 import { BiArchive } from "react-icons/bi";
 import { FiArrowDownCircle } from "react-icons/fi";
-import { FaRegBell } from "react-icons/fa";
 import Link from "next/link";
 import { useSearch } from "@/app/context/SearchContextProvider";
 
