@@ -23,7 +23,7 @@ const Home = () => {
         }}
       >
         <SongList />
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center w-full">
           <SongCard />
         </div>
       </section>
