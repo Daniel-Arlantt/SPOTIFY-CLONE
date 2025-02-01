@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "player player player";
+  grid-template-columns: 350px 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "player player player";
+  }
+}
