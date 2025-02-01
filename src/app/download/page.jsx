@@ -4,7 +4,10 @@ import Image from "next/image";
 const DownloadPage = () => {
   return (
     <section
-      className=" w-full flex-1 text-white rounded-lg max-h-full bg-gradient-to-t from-[#121212] to-spotify"
+      className=" overflow-y-scroll overflow-x-hidden max-h-full space-y-3 pb-5 p-3 w-full flex-1 text-white rounded-lg bg-gradient-to-t from-[#121212] to-spotify"
+      style={{
+        scrollbarColor: "rgba(255, 255, 255, 0.2) transparent",
+      }}
     >
       <div className="flex flex-col md:flex-row bg-gradient-to-t to-[#121212] from-spotify m-10 p-10">
         <div className="space-y-5">
@@ -23,13 +26,13 @@ const DownloadPage = () => {
         <Image
           src="/images/downloadPc.png"
           alt="Imagen de descarga para PC"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
           priority={true}
-          className="w-full h-auto object-contain drop-shadow-xl"
+          className="w-[50vw] h-auto object-contain drop-shadow-xl"
         />
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 };

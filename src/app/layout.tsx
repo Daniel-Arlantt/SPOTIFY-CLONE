@@ -5,6 +5,7 @@ import "./globals.css";
 import MusicContextProvider from "./context/MusicContextProvider";
 import SearchContextProvider from "./context/SearchContextProvider";
 import CardsContextProvider from "./context/CardsContextProvider";
+import Head from "next/head";
 
 export default function RootLayout({
   children,
@@ -13,6 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>Spotify Clon - Daniel Arlantt</title>
+        <link rel="icon" href="../../public/images/SpotifyIcon.webp" />
+      </Head>
       <body className="relative grid h-screen p-1 gap-2 bg-black">
         <CardsContextProvider>
           <MusicContextProvider>

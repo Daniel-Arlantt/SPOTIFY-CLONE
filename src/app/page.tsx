@@ -17,13 +17,15 @@ const Home = () => {
         </Link>
       </nav>
       <section
-        className="overflow-y-scroll overflow-x-hidden max-h-full space-y-3 pb-5 p-3"
+        className="overflow-y-scroll overflow-x-hidden max-h-full space-y-3 pb-5 p-3 w-full h-full"
         style={{
           scrollbarColor: "rgba(255, 255, 255, 0.2) transparent",
         }}
       >
         <SongList />
-        <SongCard />
+        <div className="flex justify-center items-center">
+          <SongCard />
+        </div>
       </section>
     </section>
   );

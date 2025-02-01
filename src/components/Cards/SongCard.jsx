@@ -22,7 +22,7 @@ const SongCard = () => {
         <div
           key={song.id}
           onClick={() => selectSong(song.id)}
-          className="hover:bg-[#282828] cursor-pointer p-4 rounded-lg bg-opacity-70 relative flex flex-col  overflow-hidden hover:scale-105 transition-transform gap-2 truncate md:w-[12vw] w-[25vw]"
+          className="hover:bg-[#282828] cursor-pointer p-4 rounded-lg bg-opacity-70 relative flex flex-col  overflow-hidden hover:scale-105 transition-transform gap-2 truncate md:w-[15vw] lg:w-[12.5vw] w-[25vw]"
 
           
         >

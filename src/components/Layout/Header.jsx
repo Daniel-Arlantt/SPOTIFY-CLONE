@@ -51,7 +51,7 @@ const Header = () => {
         </button>
       </div>
 
-      <div className="flex gap-4 text-sm lg:text-lg ">
+      <div className="flex gap-4 text-sm lg:text-lg ml-2">
         <Link
           href="/download"
           className="lg:flex hidden items-center gap-1 font-semibold hover:scale-105 transform transition-transform hover:text-white "
@@ -77,6 +77,7 @@ const Header = () => {
           width={40}
           height={40}
           priority={true}
+          className="w-[10vw] sm:w-10"
         />
       </Link>
       </div>
