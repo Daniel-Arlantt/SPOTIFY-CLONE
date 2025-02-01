@@ -25,6 +25,7 @@ const DownloadPage = () => {
           alt="Imagen de descarga para PC"
           width={500}
           height={500}
+          priority={true}
           className="w-full h-auto object-contain drop-shadow-xl"
         />
       </div>

@@ -10,9 +10,7 @@ import {
   FaStepBackward,
   FaStepForward,
   FaRedoAlt,
-  FaStream,
   FaVolumeUp,
-  FaExpand,
   FaVolumeOff,
 } from "react-icons/fa";
 import Image from "next/image";
@@ -112,6 +110,7 @@ const Player = () => {
           alt={title}
           width={80}
           height={80}
+          priority={true}
           className="rounded-lg min-w-[80px] min-h-[80px]"
         />
         <div className="text-white">

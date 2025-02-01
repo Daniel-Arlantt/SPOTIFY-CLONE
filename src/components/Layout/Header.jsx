@@ -21,6 +21,7 @@ const Header = () => {
           alt="Spotify Logo"
           width={40}
           height={40}
+          priority={true}
         />
       </Link>
 
@@ -76,6 +77,7 @@ const Header = () => {
           alt="Spotify Logo"
           width={40}
           height={40}
+          priority={true}
         />
       </Link>
       </div>
