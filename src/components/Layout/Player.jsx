@@ -31,6 +31,7 @@ const Player = () => {
     replay: false,
     vol: false,
   });
+  
   const [volume, setVolume] = useState(50);
   const [isMuted, setIsMuted] = useState(false);
   const [duration, setDuration] = useState(0);
